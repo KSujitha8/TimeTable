@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Automated Timetable Generator</h1>
+        <div class="input-section">
+            <label for="className">Class Name:</label>
+            <input type="text" id="className" placeholder="Enter class name">
+
+            <label for="staffName">Staff Name:</label>
+            <input type="text" id="staffName" placeholder="Enter staff name">
+
+            <label for="day">Day:</label>
+            <select id="day">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+
+            <label for="timeSlot">Time Slot:</label>
+            <select id="timeSlot">
+                <option value="1">08:30 - 09:20</option>
+                <option value="2">09:20 - 10:10</option>
+                <option value="3" disabled>10:10 - 10:25 (Tea Break)</option>
+                <option value="4">10:25 - 11:15</option>
+                <option value="5">11:15 - 12:00</option>
+                <option value="6" disabled>12:00 - 12:50 (Lunch break)</option>
+                <option value="7">12:50 - 01:30</option>
+                <option value="8">01:30 - 02:25</option>
+                <option value="9">02:25 - 03:15</option>
+            </select>
+
+            <button id="addClass">Add/Update Class</button>
+        </div>
+
+        <table id="timetable">
+            <thead>
+                <tr>
+                    <th>Days/Time</th>
+                    <th>08:30 - 09:20</th>
+                    <th>09:20 - 10:10</th>
+                    <th>10:10 - 10:25(Tea break)</th>
+                    <th>10:25 - 11:15</th>
+                    <th>11:15 - 12:00</th>
+                    <th>12:00 - 12:50(Lunch break)</th>
+                    <th>12:50 - 01:30</th>
+                    <th>01:30 - 02:25</th>
+                    <th>02:25 - 03:15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td></td><td></td><td class="break">Tea Break</td><td></td><td></td><td class="break">Lunch Break</td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td></td><td></td><td class="break">Tea Break</td><td></td><td></td><td class="break">Lunch Break</td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td></td><td></td><td class="break">Tea Break</td><td></td><td></td><td class="break">Lunch Break</td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td></td><td></td><td class="break">Tea Break</td><td></td><td></td><td class="break">Lunch Break</td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td></td><td></td><td class="break">Tea Break</td><td></td><td></td><td class="break">Lunch Break</td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td></td><td></td><td class="break">Tea Break</td><td></td><td></td><td class="break">Lunch Break</td><td></td><td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
